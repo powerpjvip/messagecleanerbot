@@ -67,7 +67,7 @@ async def start(cl: Client, m: Message):
             [
                 InlineKeyboardButton(
                     text='📦 Source code',
-                    url=f'https://github.com/samuelmarc/messagecleanerbot'
+                    url=f'https://github.com/'
                 )
             ]
         ]
@@ -118,13 +118,13 @@ async def delall(cl: Client, m: Message):
                             except ChatAdminRequired:
                                 await m.chat.leave()
                             return
-                    client2_user_id = 1975696269
+                    client2_user_id = client2.me.id
                     try:
                         helper_member = await m.chat.get_member(client2_user_id)
                         helper_member_status = helper_member.status
                         helper_member_privileges = helper_member.privileges
                     except UserNotParticipant:
-                        await client2.join_chat(https://t.me/+8xKDRjnMapI1ODA1)
+                        await client2.join_chat(invite_link)
                         await m.chat.promote_member(
                             user_id=client2_user_id,
                             privileges=ChatPrivileges(
