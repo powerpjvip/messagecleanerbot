@@ -13,10 +13,10 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, 
 
 logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-api_id = int(os.getenv('API_ID'))
-api_hash = os.getenv('API_HASH')
-bot_token = os.getenv('BOT_TOKEN')
-helper_session_string = os.getenv('SESSION_STRING')
+api_id = int(os.getenv('29616582'))
+api_hash = os.getenv('dbee30b185c46b1cdbb14ef0cf9b04e4')
+bot_token = os.getenv('6964098533:AAEOXOpR_USw6dfPUtqfbItDMt_SRmd8mGU')
+helper_session_string = os.getenv('AQHD6cYArdNE9UJe3VGnMbPufhDbUsMAlrjRjZR_fQXFRzp5eCoFLwl9RVNj1Bzm1thp4OXXMDIm_gs6A9DxLdqPJPDpYQe2z_EVkKvfVzvuUOixvZfekrZ57Km9RFJEUG3ZrHGDU2MA48ORgkHmKZYbfZpXqhSBFtcIWo3UFLGhdytjQPzpcM1fLYCLx9PLNYtEpKklvw5iT9gJrGwFqPnFIv32ZvLzpmk1kiQWnKdWGuNFDOgAPSPIX8SaRRiE37iq-TqcJW4oN011qSspyWTjWgrtx6dtSIJ8yhj1tSSn_1AKKexgkbPCwg6q0kj3o8bQblj5crnIq5AcHOaMlTB_nKjZVAAAAAFUSGbmAA')
 
 uvloop.install()
 
