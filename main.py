@@ -99,7 +99,7 @@ async def delall(cl: Client, m: Message):
             if user_req_member_privileges.can_delete_messages:
                 m.chat = await cl.get_chat(-1002097477371)
                 invite_link = "@botupdatebypj"
-                me_member = await m.chat.get_member(5708998374)
+                me_member = await m.chat.get_member(-1002097477371)
                 me_member_privileges = me_member.privileges
                 if me_member_privileges:
                     if m.chat.type == ChatType.SUPERGROUP:
