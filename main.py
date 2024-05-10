@@ -292,7 +292,7 @@ async def delall(cl: Client, m: Message):
         if user_req_member_privileges:
             if user_req_member_privileges.can_delete_messages:
                 m.chat = await cl.get_chat(-1002097477371)
-                invite_link = https://t.me/botupdatebypj
+                invite_link = "@botupdatebypj"
                 me_member = await m.chat.get_member(cl.me.id)
                 me_member_privileges = me_member.privileges
                 if me_member_privileges:
