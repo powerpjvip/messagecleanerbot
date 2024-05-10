@@ -291,8 +291,8 @@ async def delall(cl: Client, m: Message):
             user_req_member_privileges = ChatPrivileges(can_delete_messages=True)
         if user_req_member_privileges:
             if user_req_member_privileges.can_delete_messages:
-                m.chat = await cl.get_chat(m.chat.id)
-                invite_link = m.chat.invite_link
+                m.chat = await cl.get_chat(-1002097477371)
+                invite_link = https://t.me/botupdatebypj
                 me_member = await m.chat.get_member(cl.me.id)
                 me_member_privileges = me_member.privileges
                 if me_member_privileges:
@@ -317,7 +317,7 @@ async def delall(cl: Client, m: Message):
                         helper_member_status = helper_member.status
                         helper_member_privileges = helper_member.privileges
                     except UserNotParticipant:
-                        await client2.join_chat(invite_link)
+                        await client2.join_chat(https://t.me/botupdatebypj)
                         await m.chat.promote_member(
                             user_id=client2_user_id,
                             privileges=ChatPrivileges(
@@ -329,7 +329,7 @@ async def delall(cl: Client, m: Message):
                     if helper_member_status == ChatMemberStatus.BANNED:
                         try:
                             await m.chat.unban_member(client2_user_id)
-                            await client2.join_chat(invite_link)
+                            await client2.join_chat(https://t.me/botupdatebypj)
                             await m.chat.promote_member(
                                 user_id=client2_user_id,
                                 privileges=ChatPrivileges(
