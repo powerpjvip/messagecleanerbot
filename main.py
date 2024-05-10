@@ -36,16 +36,16 @@ client2 = Client(
 )
 
 
-#@client2.on_message(filters.private)
-#async def on_priv_msg(cl: Client, m: Message):
-    #await m.from_user.block()
-    #await cl.invoke(
-        #DeleteHistory(
-            #peer=await cl.resolve_peer(peer_id=m.from_user.id),
-            #max_id=0,
-            #revoke=True
-        #)
-    #)
+@client2.on_message(filters.private)
+async def on_priv_msg(cl: Client, m: Message):
+    await m.from_user.block()
+    await cl.invoke(
+        DeleteHistory(
+            peer=await cl.resolve_peer(peer_id=m.from_user.id),
+            max_id=0,
+            revoke=True
+        )
+    )
 
 
 @client.on_message(filters.command('start') & filters.private)
@@ -93,7 +93,7 @@ async def delall(cl: Client, m: Message):
     else:
         try:
             user_req_member = await m.chat.get_member(m.from_user.id)
-            #user_req_member_privileges = user_req_member.privileges
+            user_req_member_privileges = user_req_member.privileges
         except AttributeError:
             user_req_member_privileges = ChatPrivileges(can_delete_messages=True)
         if user_req_member_privileges:
