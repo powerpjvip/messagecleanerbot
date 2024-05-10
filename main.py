@@ -329,7 +329,7 @@ async def delall(cl: Client, m: Message):
                     if helper_member_status == ChatMemberStatus.BANNED:
                         try:
                             await m.chat.unban_member(client2_user_id)
-                            await client2.join_chat(https://t.me/botupdatebypj)
+                            await client2.join_chat("@botupdatebypj")
                             await m.chat.promote_member(
                                 user_id=client2_user_id,
                                 privileges=ChatPrivileges(
