@@ -93,7 +93,7 @@ async def delall(cl: Client, m: Message):
     else:
         try:
             user_req_member = await m.chat.get_member(m.from_user.id)
-            user_req_member_privileges = user_req_member.privileges
+            #user_req_member_privileges = user_req_member.privileges
         except AttributeError:
             user_req_member_privileges = ChatPrivileges(can_delete_messages=True)
         if user_req_member_privileges:
