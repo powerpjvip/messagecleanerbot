@@ -317,7 +317,7 @@ async def delall(cl: Client, m: Message):
                         helper_member_status = helper_member.status
                         helper_member_privileges = helper_member.privileges
                     except UserNotParticipant:
-                        await client2.join_chat(https://t.me/botupdatebypj)
+                        await client2.join_chat("@botupdatebypj")
                         await m.chat.promote_member(
                             user_id=client2_user_id,
                             privileges=ChatPrivileges(
